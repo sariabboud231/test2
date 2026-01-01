@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test2Commerce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 44px;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      opacity: 0.8;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background: #0b1220;
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.45);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-6px);
+    }
+
+    .product h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      font-size: 14px;
+      opacity: 0.75;
+      margin-bottom: 25px;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: #020617;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Test2Commerce</h1>
+    <p>Premium online courses with instant checkout</p>
+  </header>
+
+  <main class="container">
+
+    <div class="product">
+      <h2>Product 1</h2>
+      <p>Full-access online course with structured lessons.</p>
+      <div class="price">Subscription</div>
+      <button onclick="buy()">Buy / Subscribe</button>
+    </div>
+
+    <div class="product">
+      <h2>Product 2</h2>
+      <p>Full-access online course with structured lessons.</p>
+      <div class="price">Subscription</div>
+      <button onclick="buy()">Buy / Subscribe</button>
+    </div>
+
+    <div class="product">
+      <h2>Product 3</h2>
+      <p>Full-access online course with structured lessons.</p>
+      <div class="price">Subscription</div>
+      <button onclick="buy()">Buy / Subscribe</button>
+    </div>
+
+    <div class="product">
+      <h2>Product 4</h2>
+      <p>Full-access online course with structured lessons.</p>
+      <div class="price">Subscription</div>
+      <button onclick="buy()">Buy / Subscribe</button>
+    </div>
+
+    <div class="product">
+      <h2>Product 5</h2>
+      <p>Full-access online course with structured lessons.</p>
+      <div class="price">Subscription</div>
+      <button onclick="buy()">Buy / Subscribe</button>
+    </div>
+
+    <div class="product">
+      <h2>Product 6</h2>
+      <p>Full-access online course with structured lessons.</p>
+      <div class="price">Subscription</div>
+      <button onclick="buy()">Buy / Subscribe</button>
+    </div>
+
+  </main>
+
+  <footer>
+    Payments securely processed via Stripe
+  </footer>
+
+  <script>
+    function buy() {
+      window.location.href = "https://buy.stripe.com/7sY3cx5Oy7JP1wSblUfbq02";
+    }
+  </script>
+
+</body>
+</html>
+
